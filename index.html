@@ -6,6 +6,8 @@
     <title>PlayStation Studios | PlayStation (India)</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/logo.png" />
+
+    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,6 +15,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Swiper js CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="sony-banner">
@@ -21,7 +31,7 @@
 
     <nav class="navbar">
       <figure class="navbar-logo">
-        <img src="assets/navLogo.png" alt="PlayStation" />
+        <img src="/assets/navLogo.png" alt="PlayStation" />
       </figure>
 
       <ul class="navlinks">
@@ -51,15 +61,85 @@
         <div class="video-container"></div>
       </section>
 
-
       <section class="ceo-container">
         <figure class="ceo-image"></figure>
         <div class="ceo-content"></div>
       </section>
-
-
     </article>
 
+    <article class="carousal-container">
+      <h5>From PlayStation Studios</h5>
+      <h2>New releases and upcoming games</h2>
 
+      <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/slide1.png" alt="" />
+            
+            <div class="swiper-slide-content">
+              <h3>Astro Bot</h3>
+              <p>Out now. Released September 6,2024</p>
+              <button>Buy Now</button>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/slide2.png" alt="" />
+
+             <div class="swiper-slide-content">
+              <h3>Astro Bot</h3>
+              <p>Out now. Released September 6,2024</p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/slide3.png" alt="" />
+
+             <div class="swiper-slide-content">
+              <h3>Astro Bot</h3>
+              <p>Out now. Released September 6,2024</p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/slide4.png" alt="" />
+
+             <div class="swiper-slide-content">
+              <h3>Astro Bot</h3>
+              <p>Out now. Released September 6,2024</p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/slide5.png" alt="" />
+
+             <div class="swiper-slide-content">
+              <h3>Astro Bot</h3>
+              <p>Out now. Released September 6,2024</p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </article>
+
+    <!-- Swiper script CDN -->
+    <script type="module">
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
