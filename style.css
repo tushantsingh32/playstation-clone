@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   padding: 0 20px;
+  z-index: 100;
 }
 .navbar-logo > img {
   height: 50px;
@@ -120,4 +121,114 @@
   top: 30%;
   left: 35%;
   color: white;
+}
+
+.carousal-container {
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  border: 2px solid white;
+  padding: 100px 0;
+}
+.carousal-container > h5 {
+  text-align: center;
+  /* color: #0068bd; */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 12.25px;
+}
+.carousal-container > h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 34px;
+}
+
+.swiper {
+  width: 100%;
+  height: 120vh;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  height: 450px;
+  border-radius: 20px;
+  /* background: #333; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  position: relative;
+}
+.swiper-slide > img {
+  height: 80%;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Side slides */
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: 0.4;
+  transform: scale(0.85);
+}
+
+/* Active slide */
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+/* Navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+}
+
+.swiper-slide-content {
+  height: 150px;
+  width: 250px;
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px auto;
+}
+.swiper-slide-content > h3 {
+  font-size: 22px;
+  text-align: center;
+}
+.swiper-slide-content > p {
+  font-size: 12px;
+  text-align: center;
+}
+.swiper-slide-content > button {
+  padding: 8px 10px;
+  border-radius: 20px;
+  background-color: orangered;
+  color: white;
+  font-weight: 700;
+  border: none;
 }
