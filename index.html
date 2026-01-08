@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PlayStation Studios | PlayStation (India)</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/logo.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -16,130 +13,220 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Swiper js CDN -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  </head>
-  <body>
-    <header class="sony-banner">
-      <div class="sony-logo"></div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header class="sony">
+        <div class="sony-logo"></div>
     </header>
+    <div class="nav-bar">
+        <div class="nav-left">
+            <img src="assets/navLogo.png" alt="PlayStation Logo">
+            <ul class="navlinks">
+            <li>Games <i class="fa-solid fa-angle-down"></i></li>
+            <li>PS5 <i class="fa-solid fa-angle-down"></i></li>
+            <li>PS4 <i class="fa-solid fa-angle-down"></i></li>
+            <li>Services <i class="fa-solid fa-angle-down"></i></li>
+            <li>Accessories <i class="fa-solid fa-angle-down"></i></li>
+            <li>News <i class="fa-solid fa-angle-down"></i></li>
+            <li>Store <i class="fa-solid fa-angle-down"></i></li>
+            <li>Support <i class="fa-solid fa-angle-down"></i></li>
+           </ul>
 
-    <nav class="navbar">
-      <figure class="navbar-logo">
-        <img src="/assets/navLogo.png" alt="PlayStation" />
-      </figure>
-
-      <ul class="navlinks">
-        <li>Games <i class="fa-solid fa-angle-down"></i></li>
-        <li>PS5 <i class="fa-solid fa-angle-down"></i></li>
-        <li>PS4 <i class="fa-solid fa-angle-down"></i></li>
-        <li>Services <i class="fa-solid fa-angle-down"></i></li>
-        <li>Accessories <i class="fa-solid fa-angle-down"></i></li>
-        <li>News <i class="fa-solid fa-angle-down"></i></li>
-        <li>Store <i class="fa-solid fa-angle-down"></i></li>
-        <li>Support <i class="fa-solid fa-angle-down"></i></li>
-      </ul>
-
-      <aside class="signin-search-wrapper">
-        <button>Sign in</button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </aside>
-    </nav>
-
-    <article class="hero-banner">
-      <img src="assets/psLogo.png" alt="psLogo" />
-    </article>
-
-    <article class="about-container">
-      <section class="about-ps">
-        <div class="ps-content"></div>
-        <div class="video-container"></div>
-      </section>
-
-      <section class="ceo-container">
-        <figure class="ceo-image"></figure>
-        <div class="ceo-content"></div>
-      </section>
-    </article>
-
-    <article class="carousal-container">
-      <h5>From PlayStation Studios</h5>
-      <h2>New releases and upcoming games</h2>
-
-      <!-- Slider main container -->
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/slide1.png" alt="" />
-            
-            <div class="swiper-slide-content">
-              <h3>Astro Bot</h3>
-              <p>Out now. Released September 6,2024</p>
-              <button>Buy Now</button>
-            </div>
-
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/slide2.png" alt="" />
-
-             <div class="swiper-slide-content">
-              <h3>Astro Bot</h3>
-              <p>Out now. Released September 6,2024</p>
-              <button>Buy Now</button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/slide3.png" alt="" />
-
-             <div class="swiper-slide-content">
-              <h3>Astro Bot</h3>
-              <p>Out now. Released September 6,2024</p>
-              <button>Buy Now</button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/slide4.png" alt="" />
-
-             <div class="swiper-slide-content">
-              <h3>Astro Bot</h3>
-              <p>Out now. Released September 6,2024</p>
-              <button>Buy Now</button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/slide5.png" alt="" />
-
-             <div class="swiper-slide-content">
-              <h3>Astro Bot</h3>
-              <p>Out now. Released September 6,2024</p>
-              <button>Buy Now</button>
-            </div>
-          </div>
         </div>
 
-        <!-- Navigation -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </article>
+        <div class="nav-right">
+            <button>Sign in</button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="hero-logo">
+        </div>
+    </div>
 
-    <!-- Swiper script CDN -->
-    <script type="module">
-      const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1.5,
-        spaceBetween: 30,
-        centeredSlides: true,
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-  </body>
+    <div class="details">
+        <div class="upper-details">
+            <div class="upperleft-details"><h1>PlayStation Studios</h1>
+            <h3>We love storytelling, it inspires and drives everything we do. </h3>
+            <h2>This organisation has defined gaming for generations. Our collective of studios and teams span the globe – and together – advance gaming and the positive impact it has on people’s lives.</h2>
+            <h2>PlayStation Studios is the fabric that binds us together, with the boldness and spirit to explore, the passion to invent and reinvent, and the confidence to let imagination lead the way.</h2>
+            <h2>Are you ready to join us?</h2></div>
+            <div class="upperright-details"><video src="assets/gaming.mp4" controls></video>
+</div>
+        </div>
+        <div class="lower-details">
+            <div class="lower-image"></div>   
+         <div class="lower-caption"><h1>"PlayStation Studios is a creator-led organisation. Our collective of studios and teams have built some of the most memorable gaming experiences imaginable. Together, we build worlds."</h1>
+        <p>- Hermen Hulst<br>
+CEO, Studio Business Group</p>
+        </div>
+        
+        </div>
+    </div>
+    
+    <div class="swapper-head"><p>FROM PLAYSTATION STUDIO</p><h1>New releases and upcoming games</h1></div>
+    
+    <div class="swiper swiper-container">
+        <div class="swiper-wrapper">
+        
+    <div class="swiper-slide">
+        <img src="assets/slide1.png" alt="swapper1">
+    <div class="slide-info"><h1>Until Down</h1><br><p>Pre order now released on October 12 2026</p><br><button>Pre-order</button></div>
+    </div>
+    <div class="swiper-slide">
+        <img src="assets/slide2.png" alt="swapper1">
+    <div class="slide-info"><h1>Strange Things</h1><br><p>Pre order now released on October 30 2026</p><br><button>Pre-order</button></div>
+    </div>
+
+    <div class="swiper-slide">
+        <img src="assets/slide3.png" alt="swapper1">
+    <div class="slide-info"><h1>HELL SIDE</h1><br><p>Pre order now released on September 19 2026</p><br><button>Pre-order</button></div>
+    </div>
+
+    <div class="swiper-slide">
+        <img src="assets/slide4.png" alt="swapper1">
+    <div class="slide-info"><h1>Mario The Lengend</h1><br><p>Pre order now released on December 10 2026</p><br><button>Pre-order</button></div>
+    </div>
+    </div>
+
+     <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <div class="swiper-pagination"></div>
+  </div>
+
+
+<div class="hero1-container">
+    <div class="hero1-image">
+        <div class="hero1-logo"></div>  
+    </div>
+    <div class="hero1-details"><h1>Dive into the freedom</h1><p>Fight for freedom across the globe in the frenetic third person co-operative team shooter</p><button>Find out more</button></div>
+</div>
+
+
+<section class="ps-section">
+  <h1>More games from PlayStation Studios</h1>
+  <div class="ps-header">
+    <h1>Explore more play station studios</h1>
+
+    <div class="ps-nav">
+      <div class="swiper1-prev">❮</div>
+      <div class="swiper1-next">❯</div>
+    </div>
+  </div>
+     
+  <!-- CUSTOM SWIPER -->
+  <div class="swiper1">
+
+    <div class="swiper1-wrapper">
+
+      <!-- SLIDE 1 -->
+      <div class="swiper1-slide">
+        <div class="swiper1-grid">
+          <div class="swiper1-card"><img src="assets/mini1.png"><p>Nioh 2</p></div>
+          <div class="swiper1-card"><img src="assets/mini2.png"><p>Nioh</p></div>
+          <div class="swiper1-card"><img src="assets/mini3.png"><p>ASTRO</p></div>
+          <div class="swiper1-card"><img src="assets/mini4.png"><p>UNCHARTED</p></div>
+          <div class="swiper1-card"><img src="assets/mini5.png"><p>Blood & Truth</p></div>
+          <div class="swiper1-card"><img src="assets/mini6.png"><p>Bloodborne</p></div>
+
+          <div class="swiper1-card"><img src="assets/mini7.png"><p>MediEvil</p></div>
+          <div class="swiper1-card"><img src="assets/mini8.png"><p>Erica</p></div>
+          <div class="swiper1-card"><img src="assets/mini9.png"><p>Firewall</p></div>
+          <div class="swiper1-card"><img src="assets/mini10.png"><p>The Last of Us</p></div>
+          <div class="swiper1-card"><img src="assets/mini11.png"><p>Death Stranding</p></div>
+          <div class="swiper1-card"><img src="assets/mini12.png"><p>God of War</p></div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="swiper1-slide">
+        <div class="swiper1-grid">
+          <div class="swiper1-card"><img src="assets/mini13.png"><p>Death</p></div>
+          <div class="swiper1-card"><img src="assets/mini8.png"><p>Run</p></div>
+          <div class="swiper1-card"><img src="assets/mini5.png"><p>Subway</p></div>
+          <div class="swiper1-card"><img src="assets/mini9.png"><p>Fight</p></div>
+          <div class="swiper1-card"><img src="assets/mini7.png"><p>Legends</p></div>
+          <div class="swiper1-card"><img src="assets/mini8.png"><p>Bomb</p></div>
+
+           <div class="swiper1-card"><img src="assets/mini1.png"><p>Team fight</p></div>
+          <div class="swiper1-card"><img src="assets/mini2.png"><p>Axom</p></div>
+          <div class="swiper1-card"><img src="assets/mini3.png"><p>Lucy</p></div>
+          <div class="swiper1-card"><img src="assets/mini17.png"><p>Car race</p></div>
+          <div class="swiper1-card"><img src="assets/mini4.png"><p>Winpoxy</p></div>
+          <div class="swiper1-card"><img src="assets/mini18.png"><p>Gods wars</p></div>
+        </div>
+      </div>
+
+      <!--slide3-->
+      <div class="swiper1-slide">
+        <div class="swiper1-grid">
+          <div class="swiper1-card"><img src="assets/mini11.png"><p>God of way</p></div>
+          <div class="swiper1-card"><img src="assets/mini1.png"><p>Game of throne</p></div>
+          <div class="swiper1-card"><img src="assets/mini13.png"><p>Speedy</p></div>
+          <div class="swiper1-card"><img src="assets/mini7.png"><p>Run for life</p></div>
+          <div class="swiper1-card"><img src="assets/mini18.png"><p>Play nextlevel</p></div>
+          <div class="swiper1-card"><img src="assets/mini10.png"><p>Destinations</p></div>
+
+           <div class="swiper1-card"><img src="assets/mini3.png"><p>Subway</p></div>
+          <div class="swiper1-card"><img src="assets/mini4.png"><p>PUBG</p></div>
+          <div class="swiper1-card"><img src="assets/mini1.png"><p>Battleground</p></div>
+          <div class="swiper1-card"><img src="assets/mini12.png"><p>Mindflair</p></div>
+          <div class="swiper1-card"><img src="assets/mini6.png"><p>Run temple</p></div>
+          <div class="swiper1-card"><img src="assets/mini10.png"><p>Dev tools</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+   <script>
+    new Swiper(".swiper-container", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 12,
+  loop: true,
+
+  pagination: {                 // 🔥 MISSING
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+   </script>
+
+   <script>
+  new Swiper(".swiper1", {
+  wrapperClass: "swiper1-wrapper",
+  slideClass: "swiper1-slide",
+  slidesPerView: "auto",   // 🔥 required
+  centeredSlides: true,    // 🔥 required
+  spaceBetween: 30,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper1-next",
+    prevEl: ".swiper1-prev",
+  },
+});
+
+</script>
+
+</body>
 </html>
